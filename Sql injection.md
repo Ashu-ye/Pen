@@ -8,7 +8,7 @@
 2. Integrity :- modify queries to peform unauthorized updates
 3. Authentication :- modify query to bypass Authentication checks
 
-## Server Threat MOdel
+## Server Threat Model
 #### Attacker's goal:
 1. Steal or modify information in the server-side database
 
