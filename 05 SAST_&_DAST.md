@@ -120,17 +120,43 @@ STEPS:-
 3. follows the instance defaults
 
 4. Analysis Methods select **locally**
-5. 
-
-
-
-
-
-
-
 
 
 Default ID/PASS
+
 ID:- admin
+
 Pass:- admin
+
+5. - genrate a token of your project
+   - Run analysis on your project (ithe aaplya project chi language select kraychi aahe ani jr nahe paheje tr Common cli pick kraych)
+          - in this pick Other(for Go, PHP, ...)
+          - pick OS of developer machine
+          - it give link go in that
+
+6. On developer machine:-
+   - copy the downoad link
+   - make one new directory
+   - then in that folder
+   - wget Your_code_link
+   - create a softlink of it
+  
+```
+wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-8.0.1.6346-linux-x64.zip
+# unzip sonar-scanner-cli-8.0.1.6346-linux-x64.zip
+# cd sonar-scanner-8.0.1.6346-linux-x64/bin/
+# ln -s /root/sonar/sonar-scanner-8.0.1.6346-linux-x64/bin/sonar-scanner /bin/sonar-scanner
+
+```
+
+
+lkajd `#RRGGBB` jajh   `#RRGGBB`
+
+
+
+
+
+
+
+
  
