@@ -1,3 +1,97 @@
+# OSINT
+Open source Intelligence
+
+
+### Extra 
+            Attacker Surfact
+LFI                            || ===> Google
+RFI                            ||
+XSS                            ||
+SQLi        ====>   OSINT  === ||
+BCA                            ||
+IDOR                           || ===> Shodan
+
+-----------------XOX-------------------------
+
+# Google Dorking
+
+## Google Advance Operators
+
+1. Operators are used to refine the results and to maximize the search value. they are your tools as well as Hacker's weapon
+
+2. Basic Operators
++, -, ~, ., *, "", |, OR
+
+
+Example:- 
+target :- cdac.in
+* subdomains:- 
+1. site:cdac.in
+2. site:\*.*.cdac.in
+3. site:\*.*.cdac.in -www
+
+subdomains:
+site:*.*.cdac.in
+site:cdac.in
+site:cdac.in -www
+
+Login:
+intitle:Login
+site:*.sindhpolice.gov.pk intitle:Login
+
+Login URL:
+```````````
+site:*.gov.pk inurl:admin
+
+site:*.gov.pk inurl:"*.php?file="
+
+Indexing:
+``````````
+site:edu.pk "index of /"
+
+File Type:
+```````````
+site:edu.pk filetype:pdf
+
+site:edu.pk filetype:db
+
+site:edu.pk filetype:txt
+
+site:edu.pk filetype:xlsx
+
+site:edu.pk filetype:sql
+
+site:edu.pk filetype:zip
+
+site:edu.pk filetype:tar
+
+https://dheerajmadhukar.github.io/oh-my-dorks/
+
+
+
+# Shodan
+
+* shodan gives you real ip address
+
+dev shodan: KEY
+
+hostname:*.cdac.in
+
+org:cdac
+
+http.title:"Jenkins"
+
+http.title:"Jenkins" hostname:"cdac"
+
+http.title:"Jenkins" port:8080
+http.title:"Jenkins" status:200
+os:"windows7"
+country:cn
+city: pune
+
+
+
+
 # Internet Archiv
 
 
