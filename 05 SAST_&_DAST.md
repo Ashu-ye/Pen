@@ -63,9 +63,6 @@ CONS:-
 -  Slow and expensive
 -  Human fatigue and inconsistent (us bro us)
 
-      
-# DAST
-Dynamic Application Security Testing
 
 # SonarQube: 
 
@@ -106,5 +103,34 @@ docker run -d --name sonarqube-custom --restart unless-stopped -p 9000:9000 sona
 ```
 -- We are going to setup sonarqube community builts
 
+**On EC2 instance**
+```
+sudo apt install docker
+docker run -d --name sonarqube-custom --restart unless-stopped -p 9000:9000 sonarqube:community
+```
 
+STEPS:-
+1. Create a project on sonarqube dashboard
+     project display:- ditiss
+   
+     project key:- ditiss
+   
+     main branch name:- main
+   
+3. follows the instance defaults
+
+4. Analysis Methods select **locally**
+5. 
+
+
+
+
+
+
+
+
+
+Default ID/PASS
+ID:- admin
+Pass:- admin
  
