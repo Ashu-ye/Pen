@@ -107,6 +107,10 @@ docker run -d --name sonarqube-custom --restart unless-stopped -p 9000:9000 sona
 ```
 sudo apt install docker
 docker run -d --name sonarqube-custom --restart unless-stopped -p 9000:9000 sonarqube:community
+
+# use this
+
+docker run -d --name sonarqube-custom --restart unless-stopped ie SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:community 
 ```
 
 STEPS:-
@@ -150,7 +154,6 @@ wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scann
 ```
 
 
-lkajd `#RRGGBB` jajh   `#RRGGBB`
 
 
 
