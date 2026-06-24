@@ -64,7 +64,7 @@ CONS:-
 -  Human fatigue and inconsistent (us bro us)
 
 
-# SonarQube: 
+# SonarQube 
 
 Open source static code analysis tool Its used by developers to manage source code quality and consistency.
 PORT :- 9000/TCP
@@ -161,5 +161,51 @@ wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scann
 
 
 
+
+
+
+
+
+
+# DAST 
+**Dynamic Security Application Testing**
+==> in this we are gonna do 
+1. Black Box testing (NO source code access. Test what attackers see)
+2. Runtime Analysis (Test the running application in real time)
+3. Real Attack Simulation (mimic actual attacker behaviour patterns)
+
+
+## DAST Vs SAST 
+
+SAST	DAST
+	
+<img width="408" height="161" alt="image" src="https://github.com/user-attachments/assets/41e0c316-c4b1-4a9e-910c-787fefdf1d07" />
+
+
+
+| SAST | DAST |
+
+| --- | --- |
+
+|  |  |
+
+| Analyzes source code | Test running application |
+
+| finds code-level bugs | Finds runtimevulnerabilities |
+
+| SQL injection patterns | Busuness Logic flaws |
+
+| XSS vulnerability patterns | Auth bypass detection |
+
+| Cannt test runtime behavior | Session management issues |
+
+|  |  |
+
+
+
+**We can perform DAST scanning on a target in 3 ways**
+1. Authenticated scan
+2. Unauthenticated scan
+3. Both scan
 
  
