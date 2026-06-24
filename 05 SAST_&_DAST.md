@@ -114,16 +114,17 @@ docker run -d --name sonarqube-custom --restart unless-stopped ie SONAR_ES_BOOTS
 ```
 **You can then browse to _http://localhost:9000_ or _http://host-ip:9000_ in your web browser to access the web interface**
 STEPS:-
-1. Create a project on sonarqube dashboard
+1. Create a project on sonarqube dashboard locally
+   	go in project section ==> select "locally"
      project display:- ditiss
    
      project key:- ditiss
    
      main branch name:- main
    
-3. follows the instance defaults
+2. follows the instance defaults
 
-4. Analysis Methods select **locally**
+3. Analysis Methods select **locally**
 
 
 Default ID/PASS
@@ -132,13 +133,13 @@ ID:- admin
 
 Pass:- admin
 
-5. - genrate a token of your project
+4. - genrate a token of your project (this token is only use in this project)
    - Run analysis on your project (ithe aaplya project chi language select kraychi aahe ani jr nahe paheje tr Common cli pick kraych)
           - in this pick Other(for Go, PHP, ...)
           - pick OS of developer machine
           - it give link go in that
 
-6. On developer machine:-
+5. On developer machine:-
    - copy the downoad link
    - make one new directory
    - then in that folder
@@ -153,11 +154,35 @@ wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scann
 
 ```
 
+NOte:- 
+	the default quality gate of fonatqube is **80%**
+	
+## Crete & configure code quality profile and quality gate 
+
+in dashbord :- 
+1. click on **quality profile** on the menue
+2. go to the project based programming profile (select python) => select **sonar way **
+3. click on ":" three dost and copy the built in profile
+   		it ask for name :- ditiss_q_p1
+
+4. OPen your new custiom profile click on inactive rules
+   			in that go to bulk chain == Activate in ditiss_q_p1 == select/save
+5. configure quality gate for the roles
+   		- go to quality gates
+   		- click on copy on top right
+   		- once copy give the name of it
+6. Once you modify it go to ":" and set as Default
+
+7. oopen the project
+   - go to project enute
+   - go to policy and in that select quality profine
+   - if the quality profile is alrady deleate it first
+   - after deletion add custom language and select language
+  
+no w again try to scan
 
 
-
-
-
+				
 
 
 
@@ -183,23 +208,15 @@ SAST	DAST
 
 
 
-| SAST | DAST |
-
-| --- | --- |
-
-|  |  |
-
-| Analyzes source code | Test running application |
-
-| finds code-level bugs | Finds runtimevulnerabilities |
-
-| SQL injection patterns | Busuness Logic flaws |
-
-| XSS vulnerability patterns | Auth bypass detection |
-
-| Cannt test runtime behavior | Session management issues |
-
-|  |  |
+| SAST                        | DAST                         |
+| --------------------------- | ---------------------------- |
+|                             |                              |
+| Analyzes source code        | Test running application     |
+| finds code-level bugs       | Finds runtimevulnerabilities |
+| SQL injection patterns      | Busuness Logic flaws         |
+| XSS vulnerability patterns  | Auth bypass detection        |
+| Cannt test runtime behavior | Session management issues    |
+|                             |                              |
 
 
 
