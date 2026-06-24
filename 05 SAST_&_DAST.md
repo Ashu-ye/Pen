@@ -110,7 +110,7 @@ docker run -d --name sonarqube-custom --restart unless-stopped -p 9000:9000 sona
 
 # use this
 
-docker run -d --name sonarqube-custom --restart unless-stopped ie SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:community 
+docker run -d --name sonarqube-custom --restart unless-stopped -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:community
 ```
 **You can then browse to _http://localhost:9000_ or _http://host-ip:9000_ in your web browser to access the web interface**
 STEPS:-
