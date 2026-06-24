@@ -225,4 +225,27 @@ SAST	DAST
 2. Unauthenticated scan
 3. Both scan
 
- 
+
+
+ ### Tool for DAST is BurpSuite profeicinal
+
+
+ create new scan 
+ 1. select crawl nd audit
+   	- in that select scann details/material
+    ==> in url Scan give your url and paste it ge :- https://ginshop.com
+note:- in detail scope configuration we can provide in scope and out of scope items means you can exclude some paget that you dont want to scan
+
+2. select Scan configuration
+  		-in that select how you want to scan
+   
+4. Application login
+	** in this area you have to give your login details to do authentication sacnning**
+   in this select :- use recorded login sequence (if you want to do authenticatted scan)
+5. open thhe integrated burp browser(chronium) in that open the extention for it and click start record it will open incognito mode
+6. perform the entire login sequence and stop recording and then seect => copy script
+7. On burp scanner configuration select **new** => select **manual redorded login**
+8. paste your login sequence script in given section ==> ok (To verify click Replay)
+9. Go to Resource pool :- select use existing resource pool OR select Create new resource pool (it is optional but recommended)
+10. Click on **Scan**  it will start scanning
+11. TO verify do in dashbord and you can see the scanning start in left side plane 
