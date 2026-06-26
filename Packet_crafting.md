@@ -5,11 +5,13 @@
 1. Install Scapy
 
 ```sudo apt install python3-scapy -y```
+
 2. Execute a command (it will opent the framework)
 
 ```sudo scapy```
 
 i. Craft TCP and IP packets
+
 ```
 # craft IP & TCP 
 a= IP()
