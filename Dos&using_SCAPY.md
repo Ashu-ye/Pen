@@ -23,3 +23,15 @@ send(a/b loop=10)
  ``` sudo apt install yersinia```
 2. Open yersinia
 
+for Graphical interface
+
+```sudo yersinia -G```
+
+for CLI interface
+```sudo yersinia -I```
+
+To start DHCP attack directly
+```sudo uersinia dhcp -attack 1```
+
+**https://pastebin.com/raw/bYzBQETZ**
+
